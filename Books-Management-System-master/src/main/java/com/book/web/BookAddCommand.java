@@ -43,11 +43,11 @@ public class BookAddCommand {
 
 
     public void setPubdate(String pubdate) {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
         try{
-            java.util.Date date=sdf.parse(pubdate);
-            this.pubdate=date;
+            java.util.Date date = sdf.parse(pubdate);
+            this.pubdate = date;
         }catch (ParseException e){
             e.printStackTrace();
         }
